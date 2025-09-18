@@ -1,27 +1,45 @@
 
-/* how come this targets all inside body? */
+
 
 body {
-    background-color: #f9f9f9;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
 }
 
-.box {
-    /* box size and transition effect*/
-    width: 30vh;
-    height: 20vh;
-    transition: box-shadow 0.5s;
-    /* font */
-    font-weight: bolder;
-    font-size: 30px;
+.wrapper {
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+    width: 95%;
+    height: 90%;
+}
+
+.grid a {
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
-    /* center text */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-weight: 700;
+    font-size: clamp(1.2rem, 4vw, 3rem);
+    transition: box-shadow 0.5s;
+    min-width: 20px;
+    min-height: 20px;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    
 }
 
 
 /* if hover -> apply shadow */
-.box:hover {
+.grid a:hover {
     box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.199);
 }

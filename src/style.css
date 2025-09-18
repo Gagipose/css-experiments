@@ -1,0 +1,32 @@
+
+/* how come this targets all inside body? */
+
+body {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.box {
+    /* box size and transition effect*/
+    width: 30vh;
+    height: 20vh;
+    transition: box-shadow 0.5s;
+    /* font */
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* center text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* if hover -> apply shadow */
+.box:hover {
+    box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.199);
+}
